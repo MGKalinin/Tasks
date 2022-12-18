@@ -1,18 +1,13 @@
 Punched Cards (11pts)
 
-Practice Submissions
-You have not attempted this problem.
 
-Last updated: Dec 18 2022, 13:08
-Problem
-Analysis
 
 Problem
 
 A secret team of programmers is plotting to disrupt the programming language landscape and bring punched cards back by introducing a new language called Punched Card Python that lets people code in Python using punched cards! Like good disrupters, they are going to launch a viral campaign to promote their new language before even having the design for a prototype. For the campaign, they want to draw punched cards of different sizes in ASCII art.
 
 Example Punched Card.
-
+![](C:\Users\19531\Downloads\punched_card.png)
 The ASCII art of a punched card they want to draw is similar to an R×C
 matrix without the top-left cell. That means, it has (R⋅C)−1
 
@@ -23,12 +18,12 @@ rows and C=4
 
 columns:
 
-..+-+-+-+
-..|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
+..+-+-+-+   
+..|.|.|.|   
++-+-+-+-+   
+|.|.|.|.|   
++-+-+-+-+   
+|.|.|.|.|   
 +-+-+-+-+
 
 There are more examples with other sizes in the samples below. Given the integers R
@@ -64,35 +59,35 @@ Sample Input
 save_alt
 content_copy
 
-3
-3 4
-2 2
-2 3
+3   
+3 4     
+2 2     
+2 3 
 
 Sample Output
 save_alt
 content_copy
 
-Case #1:
-..+-+-+-+
-..|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
-Case #2:
-..+-+
-..|.|
-+-+-+
-|.|.|
-+-+-+
-Case #3:
-..+-+-+
-..|.|.|
-+-+-+-+
-|.|.|.|
-+-+-+-+
+Case #1:    
+..+-+-+-+   
+..|.|.|.|   
++-+-+-+-+   
+|.|.|.|.|   
++-+-+-+-+   
+|.|.|.|.|   
++-+-+-+-+   
+Case #2:    
+..+-+   
+..|.|   
++-+-+   
+|.|.|   
++-+-+   
+Case #3:    
+..+-+-+      
+..|.|.|  
++-+-+-+  
+|.|.|.|  
++-+-+-+ 
 
 Sample Case #1 is the one described in the problem statement. Sample Cases #2 and #3 are additional examples. Notice that the output for each case contains exactly R⋅C+3
 periods. 
