@@ -36,8 +36,7 @@ representing the number of ink units in the i-th printer's cartridge for the col
 
 Output
 For each test case, output one line containing Case #x: r, where x is the test case number
-(starting from 1) and
- r is IMPOSSIBLE if
+(starting from 1) and r is IMPOSSIBLE if
 there is no color that can be printed by all 3 printers. 
 Otherwise, r must be equal to "c m y k" where c, m, y,
 and k are non-negative integers that add up to 10**6 and c≤Ci,
