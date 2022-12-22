@@ -10,3 +10,5 @@ def d1000000():
 
 for case in range(int(input())):
     print('Case #%d: %s' % (case+1, d1000000()))
+    
+# Completed
