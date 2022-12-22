@@ -17,3 +17,5 @@ for i in range(1, t + 1):
     last_R = ('+-' * c + '+')
     matrix = "\n" + first_R + second_R + middle_R + last_R
     print("Case #{}: {}".format(i + 1, matrix))
+
+# Completed
