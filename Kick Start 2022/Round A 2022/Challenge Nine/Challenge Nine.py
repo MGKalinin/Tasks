@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('input_ Challenge Nine.txt')
+sys.stdin = open('input_ Challenge Nine.txt','r',encoding=None)
 
 
 t = int(input())
