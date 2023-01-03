@@ -42,4 +42,4 @@ for case in range(1, num_cases + 1):
     ans = challenge_nine(N)
     print(f'Case #{case}: {ans}')
 
-# time limit exceeded
+# time limit exceeded...
