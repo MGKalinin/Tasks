@@ -15,7 +15,7 @@ for i in range(1, t + 1):
         for z in range(0, 10):
             if (k == 0 and z == 0) is False:
                 num = S[:k] + str(z) + S[k:]
-                if int(num) % 9 == 0:
+                if int(num) % 9 == 0: #сумма цифр числа кратна 9-вычисляется быстрее? и z<S[k]
                     ans.append(int(num))
                 num = S
     print(f'Case #{i}: {min(ans)}')
