@@ -2,7 +2,7 @@ import sys
 
 sys.stdin = open('input_ Challenge Nine.txt')
 
-
+#A.
 # t = int(input())
 # # print(t)
 # for i in range(1, t + 1):
@@ -24,6 +24,7 @@ sys.stdin = open('input_ Challenge Nine.txt')
 # time limit exceeded
 
 
+#B.
 # def challenge_nine(n):
 #     num = str(n)
 #     l = len(num)
@@ -48,12 +49,14 @@ sys.stdin = open('input_ Challenge Nine.txt')
 # time limit exceeded...
 
 
-t = int(input())
-s = 0
-for i in range(1, t + 1):
-    s += int(i)
-    r = int(t) * 10 + 9 - (s % 9)
-    print(f'Case #{i}: {r}')
+################################################
+# t = int(input())
+# s = 0
+# for i in range(1, t + 1):
+#     s += int(i)
+#     r = int(t) * 10 + 9 - (s % 9)
+#     print(f'Case #{i}: {r}')
 
 # wrong answer...
 
+################################################
