@@ -25,40 +25,21 @@ sys.stdin = open('input_ Challenge Nine.txt')
 
 
 #B.###############################
-# def challenge_nine(n):
-#     num = str(n)
-#     l = len(num)
-#     answer = []
-#     for i in range(l + 1):
-#         for j in range(0, 10):
-#             if (i == 0 and j == 0) is False:
-#                 num = num[:i] + str(j) + num[i:]
-#                 if int(num) % 9 == 0:
-#                     answer.append(int(num))
-#                 num = str(n)
-#     return min(answer)
-#
-#
-# num_cases = int(input())
-# for case in range(1, num_cases + 1):
-#     N = input()
-#     ans = challenge_nine(N)
-#     print(f'Case #{case}: {ans}')
-
-# time limit exceeded...
-
-
-#C.###############################
-# 1.новое число=9-(сумма цифр числа)%9
-# 2.найти цифру числа больше нового числа
-# 3.вставить перед ней новое число
-# 4.если все цифры числа > нового числа, то поставить в конец числа
-# 4.если новое число 0, то вставить его после первой цифры числа
 t = int(input())
-print(t)
 for i in range(1, t + 1):
-    n=int(input())
-    s=str(n)
-    l=len(s)
-    # 1.новое число=9-(сумма цифр числа)%9
-    new_number=9-(sum(int(x) for x in str(n))%9)
+	n=int(input())
+	d=(-n)%9
+	s=[int(_) for _ in str(n)]
+	flag=False
+	for k in range(len(s)):
+		if d<s[k]:
+			if k==0 and d==0:
+				continue
+			else:
+				s=s[:k]+[d]+s[k:]
+				flag=True
+				break
+	if not flag:
+		s=s+[d]
+	print(f'Case #{i}: ' + ''.join(map(str, s)))
+#passed

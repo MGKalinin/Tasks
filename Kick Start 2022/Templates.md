@@ -1,8 +1,9 @@
 # Templates
 
+```
 import sys
 sys.stdin = open("input.txt")
-
+```
 
 
 input() reads a string with a line of input, stripping the ' ' (newline) at the end.
