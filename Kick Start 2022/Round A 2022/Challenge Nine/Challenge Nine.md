@@ -1,5 +1,5 @@
-## [Challenge Nine ](https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e7997)
-# Explanations
+# [Challenge Nine ](https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e7997)
+## Explanations
 First, let us decide which digit to insert. In fact, a number is a multiple of 9 if and only if the sum of its all digits is a multiple of 9. Therefore, we can add up all the L digits of the given N, and use **9 − (sum mod 9)** to get the new digit we want. Wherever we insert it, the sum of all digits of the new number and the new number itself will be a multiple of 9. Note that when **sum mod 9 = 0**, adding either a new 0 or a new 9 can make the result be a multiple of 9, but 0 is always more preferable than 9 because we are looking for the smallest answer.
 
 
