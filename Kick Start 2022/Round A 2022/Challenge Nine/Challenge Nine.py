@@ -62,5 +62,3 @@ for i in range(1, t + 1):
     l=len(s)
     # 1.новое число=9-(сумма цифр числа)%9
     new_number=9-(sum(int(x) for x in str(n))%9)
-
-
