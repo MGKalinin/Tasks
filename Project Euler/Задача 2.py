@@ -12,3 +12,6 @@ while b<4000000:
 		ans+=b
 	a,b=b,a+b
 print(ans)
+
+
+# pr
