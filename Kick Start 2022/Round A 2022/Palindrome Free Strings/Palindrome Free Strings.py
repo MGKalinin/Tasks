@@ -11,10 +11,12 @@ def palindrome(s):
 
 t = int(input())
 for i in range(1, t + 1):
-    mm = [s for s in input().split(' ')]
-    s = mm[0]
-    print(s)
-    print(type(s))
-    for index, character in enumerate(s):
-
-# print(palindrome('madam'))
+    number = [s for s in input().split(' ')]  # кол-во символов
+    line = [k for k in input().split(' ')]  # строка
+    # print(number, type(number))  # list
+    # print(line, type(line))
+    # print(type(line[0]))  # str
+    for k in line:
+        for z in k:  # одна из строк
+            if z == '?':
+                print(z)
