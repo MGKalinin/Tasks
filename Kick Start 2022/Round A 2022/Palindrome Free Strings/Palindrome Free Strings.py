@@ -12,8 +12,9 @@ def palindrome(s):
 t = int(input())
 for i in range(1, t + 1):
     number = [s for s in input().split(' ')]  # кол-во символов
+    print(number)
     line = [k for k in input().split(' ')]  # строка
-    # print(line[0])
+    print(type(line[0]))  # str
     r = [x for x in line[0]]  # ['1', '0', '0', '?', '?', '?', '0', '0', '1']
     # print(r)
     for j in range(len(r) - 4):
@@ -22,5 +23,5 @@ for i in range(1, t + 1):
         for ind, ch in enumerate(p):
             if ch == '?':
                 new_z = '1'
-                p[ind] = new_z
+                p[ind] = new_z  # ['1', '0', '0', '1', '?']?
                 print(p)
