@@ -24,7 +24,7 @@ for i in range(1, t + 1):
     # new_line =['1', '0', '0', '?', '?', '?', '0', '0', '1']
     print(new_line)
     for j in range(len(new_line) - 4):
-        f = new_line[j:j + 5]  # ['1', '0', '0', '?', '?']
+        f = new_line[j:j + 5]  # f= ['1', '0', '0', '?', '?']
         print(f'это f {f}')
         for ind, z in enumerate(f):
             if z == "?":
