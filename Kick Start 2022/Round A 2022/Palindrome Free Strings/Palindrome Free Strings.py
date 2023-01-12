@@ -21,22 +21,20 @@ for i in range(1, t + 1):
     line = [k for k in input().split(' ')]  # строка
     # print(type(line[0]))
     new_line = [x for x in line[0]]
-    # new_line =['1', '0', '0', '?', '?', '?', '0', '0', '1']
-    print(new_line)
+    print(f'это new_line {new_line}')  # ['1', '0', '0', '?', '?', '?', '0', '0', '1']
     for j in range(len(new_line) - 4):
         f = new_line[j:j + 5]  # f= ['1', '0', '0', '?', '?']
         print(f'это f {f}')
         for ind, z in enumerate(f):
-            if z == "?":
+            if z == "?":  # заменить все знаки ? на 1 или 0,затем проверить на палиндром
                 f[ind] = d1
-                print(f'это первая попытка f {f}')
                 if palindr(f):
-                    print('imposs')
-                else:
                     f[ind] = d0
-                    print(f'это вторая попытка f {f}')
-                    if palindr(f):
-                        print('imp')
-                    else:
-                        print('poss')
+            else:
+                print('poss')
 
+
+ff = ['1', '0', '0', '?', '?']
+fff = ['1' if x == '?' else x for x in ff]  # y = [0 if x==1 else x for x in y]
+
+print(f'это fff {fff}')
