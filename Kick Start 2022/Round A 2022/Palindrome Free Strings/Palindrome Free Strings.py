@@ -8,17 +8,20 @@ sys.stdin = open("input_Palindrome Free Strings.txt")  # для pycharm, тлф
 probe = ['1', '0', '0', '?', '?']
 
 
+def check_palindrome(h):
+    return h == h[::-1]
+
+
 def palindr(s):
-    ls_ch = [ind for ind, z in enumerate(s) if z == '?']
-    print(f'***{ls_ch}***')
-    # заменить на 0,проверить на палиндром;заменить на 1,
-    # проверитьь на палиндроме
     for i, z in enumerate(s):
         if z == '?':
-            new_ch = '1'
-            s[i] = new_ch
-        print(s)
-    return True
+            s[i] = '0'
+            if '?' not in s:
+                if check_palindrome(s):
+                    s[i] = '1'
+                    if check_palindrome(s):
+                        return False
+                return False
 
 
 def d1000000():
