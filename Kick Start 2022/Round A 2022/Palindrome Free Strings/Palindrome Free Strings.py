@@ -19,9 +19,11 @@ def d1000000():
     line = [_ for _ in S[0]]  # str
     print(line)
     for j in range(N - 4):
-        new_line = line[j:j + 5]
+        new_line = line[j:j + 5]  # ['1', '0', '0', '?', '?']
+        # прописать отдельную функцию которая будет проверять
+        # на знаки вопроса ,заменять на 1 или 0 ;
+        # проверять на палиндром и возвращать POSSIBLE/IMPOSSIBLE
         print(new_line)
-
 
 
 for case in range(int(input())):
