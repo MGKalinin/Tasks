@@ -11,8 +11,13 @@ probe = ['1', '0', '0', '?', '?']
 def palindr(s):
     ls_ch = [ind for ind, z in enumerate(s) if z == '?']
     print(f'***{ls_ch}***')
-    # заменить на 0,проверить на палиндроме;
-
+    # заменить на 0,проверить на палиндром;заменить на 1,
+    # проверитьь на палиндроме
+    for i, z in enumerate(s):
+        if z == '?':
+            new_ch = '1'
+            s[i] = new_ch
+        print(s)
     return True
 
 
