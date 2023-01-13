@@ -11,30 +11,18 @@ def palindr(s):
     return s == s[::-1]
 
 
-d0 = '0'
-d1 = '1'
-
-t = int(input())
-for i in range(1, t + 1):
-    number = [s for s in input().split(' ')]  # кол-во символов
-    # print(number)
-    line = [k for k in input().split(' ')]  # строка
-    # print(type(line[0]))
-    new_line = [x for x in line[0]]
-    print(f'это new_line {new_line}')  # ['1', '0', '0', '?', '?', '?', '0', '0', '1']
-    for j in range(len(new_line) - 4):
-        f = new_line[j:j + 5]  # f= ['1', '0', '0', '?', '?']
-        print(f'это f {f}')
-        for ind, z in enumerate(f):
-            if z == "?":  # заменить все знаки ? на 1 или 0,затем проверить на палиндром
-                f[ind] = d1
-                if palindr(f):
-                    f[ind] = d0
-            else:
-                print('poss')
+def d1000000():
+    N = int(input())  # len str
+    print(N, type(N))  # int
+    S = [s for s in input().split(' ')]
+    print(S)
+    line = [_ for _ in S[0]]  # str
+    print(line)
+    for j in range(N - 4):
+        new_line = line[j:j + 5]
+        print(new_line)
 
 
-ff = ['1', '0', '0', '?', '?']
-fff = ['1' if x == '?' else x for x in ff]  # y = [0 if x==1 else x for x in y]
 
-print(f'это fff {fff}')
+for case in range(int(input())):
+    print('Case #%d: %s' % (case + 1, d1000000()))
