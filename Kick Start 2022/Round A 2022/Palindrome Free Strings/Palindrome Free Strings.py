@@ -34,6 +34,7 @@ def verification():
     for j in range(N - 4):
         new_line = line[j:j + 5]  # делает нарезки по 5 знаков,
         # а надо в начале знак убрал- в конец добавил
+        print(new_line)
         if palindr(new_line):
             print('POSSIBLE')
         print('IMPOSSIBLE')
