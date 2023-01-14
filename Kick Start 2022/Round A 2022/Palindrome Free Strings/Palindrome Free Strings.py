@@ -5,7 +5,7 @@ sys.stdin = open("input_Palindrome Free Strings.txt")  # для pycharm, тлф
 # sys.stdin=open('/workspaces/Tasks/Kick Start 2022/Round A 2022/Palindrome Free Strings/input_Palindrome Free
 # Strings.txt') #для Codespaces GitHub нужно скопировать  путь
 
-# probe = ['1', '0', '0', '?', '?']
+probe = ['1', '0', '0', '?', '?']
 
 
 def check_palindrome(h):
@@ -24,21 +24,22 @@ def palindr(s):
                 return False
 
 
-def d1000000():
+def verification():
     N = int(input())  # len str
-    print(N, type(N))  # int
+    # print(N, type(N))  # int
     S = [s for s in input().split(' ')]
-    print(S)
+    # print(S)
     line = [_ for _ in S[0]]  # str
     print(line)
     for j in range(N - 4):
-        new_line = line[j:j + 5]
+        new_line = line[j:j + 5]  # делает нарезки по 5 знаков,
+        # а надо в начале знак убрал- в конец добавил
         if palindr(new_line):
-            return 'POSSIBLE'
-        return 'IMPOSSIBLE'
+            print('POSSIBLE')
+        print('IMPOSSIBLE')
 
 
 for case in range(int(input())):
-    print('Case #%d: %s' % (case + 1, d1000000()))
+    print('Case #%d: %s' % (case + 1, verification()))
 
 # print(palindr(probe))
