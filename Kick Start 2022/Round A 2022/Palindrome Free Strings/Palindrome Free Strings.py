@@ -2,6 +2,7 @@ import sys
 
 sys.stdin = open("input_Palindrome Free Strings.txt")  # для pycharm, тлф
 
+
 # sys.stdin=open('/workspaces/Tasks/Kick Start 2022/Round A 2022/Palindrome Free Strings/input_Palindrome Free
 # Strings.txt') #для Codespaces GitHub нужно скопировать  путь
 
