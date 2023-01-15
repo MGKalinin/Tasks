@@ -30,14 +30,14 @@ def verification():
     S = [s for s in input().split(' ')]
     # print(S)
     line = [_ for _ in S[0]]  # str
-    print(line)
+    print(f'это line{line}')
     for j in range(N - 4):
-        new_line = line[j:j + 5]  # делает нарезки по 5 знаков,
-        # а надо в начале знак убрал- в конец добавил
-        print(new_line)
-        if palindr(new_line):
-            print('POSSIBLE')
-        print('IMPOSSIBLE')
+        new_line = line[j:j + 5]
+        print(f'это new_line{new_line}')
+        if palindr(new_line):  # вот здесь прописать
+            # переход к следующему отрезку
+            return 'POSSIBLE'
+        return 'IMPOSSIBLE'
 
 
 for case in range(int(input())):
