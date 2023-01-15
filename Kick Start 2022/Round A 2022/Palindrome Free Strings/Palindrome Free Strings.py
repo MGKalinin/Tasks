@@ -11,7 +11,6 @@ def verification(s):
 
 def palindrome(s):
     key = {i for i, z in enumerate(s) if z == '?'}
-    # print(key, type(key))  # {3, 4, 5} <class 'set'>
     i = 0
     rez = []
     while i < len(s):
