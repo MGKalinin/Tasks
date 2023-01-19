@@ -26,19 +26,26 @@ sys.stdin = open("input_Interesting Integers.txt")
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 b = [91, 92, 93, 94, 95, 96, 97, 98, 99]
 
-for j in b:
-    # print(j)
-    r=0
-    for t in str(j):
-        print(t)
+
+def summ(n):
+    """Функция суммирует цифрры числа."""
+    s = 0
+    for k in str(n):
+        s += int(k)
+    return s
+
+
+def prod(n):
+    """Функуия возвращает произведени цифр числа."""
+    p = 1
+    for j in str(n):
+        p *= int(j)
+    return p
 
 
 t = int(input())
 for i in range(1, t + 1):
     start, finish = [int(s) for s in input().split(' ')]
-    # print(start, finish)
-    first = []
-    for j in range(start, finish + 1):
-        # print(j)
-        first.append(j)
-    # print(first)
+
+print(summ(b[1]))
+print(prod(b[3]))
