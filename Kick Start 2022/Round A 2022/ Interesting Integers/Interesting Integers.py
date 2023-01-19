@@ -6,25 +6,12 @@
 import sys
 
 sys.stdin = open("input_Interesting Integers.txt")
-###########################################
-# string = list(input("Введи число: "))
-# output = 0
-#
-# for num in string:
-#     output += int(num)
-#
-# print(output)
 
-# Двузначное число больше 9, но меньше 100.
-###########################################
 
 # N  # число
 # L  # количество цифр в числе
 # P # произведение цифр
-# S #сумма чифр
-
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-b = [91, 92, 93, 94, 95, 96, 97, 98, 99]
+# S # сумма чифр
 
 
 def summ(n):
@@ -43,9 +30,16 @@ def prod(n):
     return p
 
 
-t = int(input())
-for i in range(1, t + 1):
+def rezult():
     start, finish = [int(s) for s in input().split(' ')]
+    rez = []
+    for z in range(start, finish + 1):
+        if prod(z) % summ(z) == 0:
+            rez.append(z)
+    return len(rez)
 
-print(summ(b[1]))
-print(prod(b[3]))
+
+for case in range(int(input())):
+    print('Case #%d: %s' % (case + 1, rezult()))
+
+# time limit exceeded
