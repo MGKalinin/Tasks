@@ -43,3 +43,4 @@ for case in range(int(input())):
     print('Case #%d: %s' % (case + 1, rezult()))
 
 # time limit exceeded
+# solved 1 test
