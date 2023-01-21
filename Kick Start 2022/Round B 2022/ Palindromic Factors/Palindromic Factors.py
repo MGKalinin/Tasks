@@ -1,3 +1,4 @@
+from math import sqrt
 import sys
 
 sys.stdin = open("input_Palindromic Factors.txt")
