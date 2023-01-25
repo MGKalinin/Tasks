@@ -34,23 +34,14 @@ def square_root(x):
 
 
 t = int(input())
-# For each factor a≤A**0.5, the number b=A/a≥A**0.5 is
-# also a factor of A.
+# Let a and b be two factors of A such that A=ab and a≤b.
+# Then a≤A−−√. It follows that we can find all factors of A
+# by checking the first A−−√ numbers only. For each factor a≤A−−√,
+# the number b=Aa≥A−−√ is also a factor of A.
 for i in range(1, t + 1):
     A = int(input())
     r = []
-    for a in range(1, square_root(A) + 1):  # For each factor a≤A**0.5
-        b = A % a
-        print(f'sq_r {square_root(A)}')
-        print(f'b {b}')
-        if b >= square_root(A):  # the number b=A/a≥A**0.5 is
-            # also a factor of A.
-            r.append(b)
-            print(f'first r {r}')
-            if isPalindrome(b):
-                r.append(b)
-                print(f'second r {r}')
-    print(f'это r {r}')
+
     rez = len(r)
 
     print(f'Case #{i}: {rez}')
