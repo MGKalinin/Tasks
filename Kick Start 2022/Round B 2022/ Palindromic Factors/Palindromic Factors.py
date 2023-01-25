@@ -50,7 +50,7 @@ for i in range(1, t + 1):
             r.append(b)
 
 
-    print(r)
+    #print(r)
     rez = len(r)
 
     print(f'Case #{i}: {rez}')
