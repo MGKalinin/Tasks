@@ -32,4 +32,4 @@ for i in range(1, t + 1):
     # print(r)
     rez = len(set(r))
 
-    print(f'Case #{i}: {rez}')
+print(f'Case #{i}: {rez}')
