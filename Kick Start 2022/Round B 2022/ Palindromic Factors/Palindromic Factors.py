@@ -30,6 +30,6 @@ for i in range(1, t + 1):
                 r.append(b)
 
     # print(r)
-    rez = len(r)
+    rez = len(set(r))
 
     print(f'Case #{i}: {rez}')
