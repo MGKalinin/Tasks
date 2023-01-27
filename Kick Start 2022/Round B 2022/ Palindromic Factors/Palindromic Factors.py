@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open("input_Palindromic Factors_ts1_.txt")
+sys.stdin = open("/workspaces/Tasks/Kick Start 2022/Round B 2022/ Palindromic Factors/input_Palindromic Factors_ts1_.txt")
 
 
 def isPalindrome(a):
