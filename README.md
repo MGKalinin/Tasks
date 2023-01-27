@@ -4,7 +4,7 @@
 |:-------------------------------------------|:-----------------|:----------------------|:---------------------------|:------------------------------------|:-----------|
 | Coding Practice with Kick Start Session #1 | Sample Problem + | Centauri Prime +-     | H-index +-                 | Hex                                 | Milk Tea   |
 | Round A 2022                               | Speed Typing +   | Challenge Nine +-     | Palindrome Free Strings +- | Interesting Integers: solved 1 test |            |
-| Round B 2022                               | Infinity Area +  | Palindromic Factors : Samp,TS1-Passed;TS2-TLE | Unlock the Padlock         | Hamiltonian Tour                    |
+| Round B 2022                               | Infinity Area +  | Palindromic Factors : Samp,TS1-Passed;TS2-TLE | Unlock the Padlock: ?         | Hamiltonian Tour                    |
 
 ## Project Euler
 | Problem № | Result |
