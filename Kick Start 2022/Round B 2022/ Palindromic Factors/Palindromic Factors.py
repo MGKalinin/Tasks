@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open("/workspaces/Tasks/Kick Start 2022/Round B 2022/ Palindromic Factors/input_Palindromic Factors.txt")
+sys.stdin = open("input_Palindromic Factors.txt")
 
 
 def isPalindrome(a):
@@ -42,15 +42,14 @@ for i in range(1, t + 1):
     A = int(input())
     r = []
     for a in range(1, square_root(A) + 1):
-        if A%a==0:
+        if A % a == 0:
             if isPalindrome(a):
                 r.append(a)
-        b=A//a
-        if isPalindrome(b) :
-            r.append(b)
+            b = A // a
+            if isPalindrome(b):
+                r.append(b)
 
-
-    #print(r)
+    # print(r)
     rez = len(r)
 
     print(f'Case #{i}: {rez}')
