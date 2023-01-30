@@ -2,6 +2,7 @@ import sys
 
 sys.stdin = open("New Password.txt")
 
+
 # t number of test cases
 # N length of the old password
 # P old password
@@ -13,30 +14,6 @@ sys.stdin = open("New Password.txt")
 # 4.At least one digit.
 # 5.At least one special character #, @, *, &.
 
-keys = ['#', '@', '*', '&']
-
-
-def spec_ch(a):
-    key = ['#', '@', '*', '&']
-    for j in key:
-        if j in a:
-            return True
-        return False
-
-
-t = int(input())
-for i in range(1, t + 1):
-    N = [int(s) for s in input().split(' ')]
-    P = [s for s in input().split(' ')]
-    print(N[0], type(N[0]))
-    print(P[0], type(P[0]))
-    if not (any(x.islower() for x in P)):
-        print('no1')
-    if not (any(x.isupper() for x in P)):
-        print('no2')
-    if not (any(x.isdigit() for x in P)):
-        print('no3')
-    print(spec_ch(P))
 
 # string createNewPassword(string oldPassword) {
 #     bool condition2 = false;
@@ -65,3 +42,51 @@ for i in range(1, t + 1):
 #
 #     return newPassword;
 # }
+
+# if not (any(x.islower() for x in P)):
+# if not (any(x.isupper() for x in P)):
+# if not (any(x.isdigit() for x in P)):
+
+def createNewPassword():
+    N = int(input())  # length of the old password
+    # print(N)
+    P = [s for s in input().split(' ')]  # old password
+    # print(P)
+    condition2 = False
+    condition3 = False
+    condition4 = False
+    condition5 = False
+    newPassword = P[0]
+    for j in newPassword:
+        if j.isupper():
+            condition2 = True
+        elif j.islower():
+            condition3 = True
+        elif j.isdigit():
+            condition4 = True
+        elif j == '@' or j == '#' or j == '&' or j == '*':
+            condition5 = True
+    n = list(newPassword)
+    if not condition2:
+        n.append("A")
+        # n = ''.join(n)
+        # print(n)
+    if not condition3:
+        n.append("a")
+        # print(n)
+    if not condition4:
+        n.append("1")
+        # print(n)
+    if not condition5:
+        n.append("#")
+        # print(n)
+
+    while len(n) < 7:
+        n.append("1")
+
+    return ''.join(n)
+
+
+for case in range(int(input())):
+    print('Case #%d: %s' % (case + 1, createNewPassword()))
+# Passed
