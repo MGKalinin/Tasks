@@ -20,7 +20,7 @@ def range_partition():
     else:
         print(f'POSSSIBLE  SumN {SumN}, S_Alan {S_Alan}')
         for i in range(1, N + 1):
-            if i <= S_Alan + 1:
+            if i < S_Alan:
                 r.append(i)
                 S_Alan -= i
         print(f'quantity {len(r)},list {r}')
