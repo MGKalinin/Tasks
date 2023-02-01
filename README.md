@@ -19,7 +19,7 @@
 |                                                | Hamiltonian Tour         |                         |                   
 | **Round C 2022**                               |                          |                         |                  
 |                                                | New Password             | +                       |
-|                                                | Range Partition          | ?                       |                  
+|                                                | Range Partition (Greedy algorithm)         | ?                       |                  
 |                                                | Ants on a Stick          |                         |                  
 |                                                | Palindromic Deletions    |                         |                  
                                                                                                                                                                                                                                   
