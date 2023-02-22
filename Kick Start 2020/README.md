@@ -1,4 +1,4 @@
-# Templates
+# Шаблоны
 
 ```
 import sys
