@@ -15,18 +15,6 @@ n, m = (int(s) for s in input().split(' ')) # read a list of integers, 2 in this
       print(f'Case #{i}: {n+m} {n*m}')  
 ```
 
-
-```commandline
-t = int(input())  
-for i in range(1, t + 1):  
-    printer1 = [int(s) for s in input().split(' ')]
-    
-    
-print("Case #" + str(i) + ": " + str(c))
-```
-
-
-
 ```commandline
 def d1000000():  
     N = int(input())  
