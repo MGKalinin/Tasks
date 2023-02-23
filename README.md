@@ -1,10 +1,10 @@
 
 ## Kick Start 2020
-| Round        | Problem               | Status | 
-|:-------------|:----------------------|:-------|
-| Round A 2020 | 1.Allocation (greedy) | +      |            
- |              | 2.Plates ()           |        |
- |              |                       |        |
+| Round        | Problem                        | Status | 
+|:-------------|:-------------------------------|:-------|
+| Round A 2020 | 1.Allocation (Greedy)          | +      |            
+ |              | 2.Plates (Dynamic Programming) |        |
+ |              |                                |        |
                                                                                                                                                                                                                                   
 
 ## Project Euler
