@@ -7,6 +7,14 @@
  |              |                                |        |
                                                                                                                                                                                                                                   
 
+
+## LeetCode  
+
+| Problem №               | Result |
+|:------------------------|:-------|
+| 1323. Maximum 69 Number |        |
+
+
 ## Project Euler
 | Problem № | Result |
 |-----------|--------|

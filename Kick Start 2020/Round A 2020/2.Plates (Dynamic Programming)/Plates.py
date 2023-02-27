@@ -6,7 +6,7 @@ import sys
 # integers, describing the beauty values of each stack of plates
 # from top to bottom.
 
-sys.stdin = open(" Allocation.txt")
+sys.stdin = open(" Plates.txt")
 
 t = int(input())
 for i in range(1, t + 1):
